@@ -1,0 +1,82 @@
+body {
+    /*
+    Wow!  It  took me around 40 minutes to figure out why there was a "hole"
+    at the top of my browser  between the top edge of the header and the top
+    edge of the browser window. It wasn¿t until I scrolled the window that I
+    noticed a sliver only a few pixels in height through which I  could  see
+    the rest of the content peeking through as it scrolled beneath the fixed
+    header. Using the DevTools, I discovered that something  was  setting  a
+    margin,  and  that  the  culprit  was  the body element! Apparently, the
+    infamous "user agent" stylesheet sets a default margin of 8  pixels  for
+    the  body element, which was pushing the header down by a few pixels and
+    creating a gap between the top of the header and the edge of the window.
+    To rectify that, I coded the following override:
+    */
+    margin-top: 0;  /* Override the default value for the the top margin of the body element. */
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+div h1 {
+    display: inline-flex;
+    font-size: 22px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+#mission {
+    display: flex;
+    margin-top: 70px;
+    Height: 700PX;
+    Width: 1200PX;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../resources/images/img-mission-background.jpg");
+}
+
+#mission div {
+    Width: 100%;
+    Height: 150PX;
+    Flex-grow: 0;
+    background-color: black;
+}
+
+#tea {
+    display: block;
+    width: 1000px;50
+}
+
+#tea div {
+    Width: 1000px;
+    Height: 150PX;
+    Flex-grow: 0;
+    background-color: black;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
