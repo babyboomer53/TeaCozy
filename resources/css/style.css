@@ -16,11 +16,16 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
+    /*
     background-color: black;
+    background: linear-gradient(to bottom, black, black, black, rgb(142, 113, 12), White);
+    */
+    background: linear-gradient(45deg, Gray, Black, Gray);
     opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -31,6 +36,7 @@ header {
     border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.6;
     background-color: black;
 }
 
@@ -64,18 +70,22 @@ nav h1 {
     background-color: black;
 }
 
-#tea {
-    display: block;
+#tea-of-the-month div {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 1000px;
 }
 
-#tea div {
-    Width: 1000px;
-    Height: 150PX;
-    Flex-grow: 0;
-    background-color: black;
+table.tea {
+    margin: 10px;
 }
-
+    
+td img {
+    width: 300px;
+    height: auto;
+}
+    
 h2,
 h4 {
     text-align: center;
