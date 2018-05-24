@@ -1,3 +1,7 @@
+:root {
+    --sepia: #704214;
+}
+
 body {
     /*
     Wow!  It  took me around 40 minutes to figure out why there was a "hole"
@@ -16,11 +20,6 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
-    /*
-    background-color: black;
-    background: linear-gradient(to bottom, black, black, black, rgb(142, 113, 12), White);
-    */
-    /*background: linear-gradient(45deg, Gray, Black, Gray);*/
     background-image: url("../../resources/images/Wrinkled-paper.jpg");
     opacity: 0.9;
     display: flex;
@@ -38,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     opacity: 0.6;
-    background-color: black;
+    background-color: var(--sepia);
 }
 
 header img {
@@ -46,11 +45,11 @@ header img {
     margin-left: 10px;
 }
 
-nav h1 {
+nav a {
     display: inline-flex;
     font-size: 22px;
     font-weight: normal;
-    text-decoration: underline;
+    color: seashell;
     margin: 0 10px;
 }
 
@@ -68,11 +67,11 @@ nav h1 {
     Width: 100%;
     Height: 150PX;
     Flex-grow: 0;
-    background-color: black;
+    background-color: var(--sepia);
     opacity: 0.6;
 }
 
-#tea-of-the-month div {
+#featured-tea div {
     display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -91,4 +90,55 @@ td img {
 h2,
 h4 {
     text-align: center;
+}
+
+#locations {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    Width: 1200PX;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../resources/images/img-locations-background.jpg");
+}
+
+.banner {
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+    line-height: 2.5;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--sepia);
+    /*background-color: Blue;*/
+    opacity: 0.9;
+}
+
+.banner:hover {
+    border: 2px solid orange;
+    color: white;
+    opacity: 1;
+}
+
+.banner p::first-line {
+    font-size: 1.17em; /* I believe this is the default size of HTML h3 elements. */
+    font-weight: bold;
+}
+
+#contact {
+    display: block;
+    flex-direction: column;
+    height: 225px;
+    width: 1200px;
+    margin-top: 20px;
+    background-color: var(--sepia);
+    text-align: center;
+}
+
+#contact h6 {
+    margin-left: 10px;
+    text-align: left;
 }
