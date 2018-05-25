@@ -16,11 +16,11 @@ body {
     creating a gap between the top of the header and the edge of the window.
     To rectify that, I coded the following override:
     */
-    margin-top: 0;  /* Override the default value for the the top margin of the body element. */
+    margin-top: 0; /* Override the default value for the the top margin of the body element. */
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
-    background-image: url("../../resources/images/Wrinkled-paper.jpg");
+    background-image: url("../../resources/images/WhiteVignette.jpg");
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -36,16 +36,17 @@ header {
     border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
-    opacity: 0.6;
+    opacity: 0.8;
     background-color: var(--sepia);
+    z-index: 10;
 }
 
-header img {
-    height: 50px;
-    margin-left: 10px;
-}
+    header img {
+        height: 50px;
+        margin-left: 10px;
+    }
 
-nav a {
+a {
     display: inline-flex;
     font-size: 22px;
     font-weight: normal;
@@ -63,13 +64,13 @@ nav a {
     background-image: url("../../resources/images/img-mission-background.jpg");
 }
 
-#mission div {
-    Width: 100%;
-    Height: 150PX;
-    Flex-grow: 0;
-    background-color: var(--sepia);
-    opacity: 0.6;
-}
+    #mission div {
+        Width: 100%;
+        Height: 150PX;
+        Flex-grow: 0;
+        background-color: Black;
+        opacity: 0.8;
+    }
 
 #featured-tea div {
     display: inline-flex;
@@ -81,12 +82,18 @@ nav a {
 table.tea {
     margin: 10px;
 }
-    
+
 td img {
     width: 300px;
     height: auto;
 }
-    
+
+table caption {
+    /*color: var(--sepia);*/
+    color: Black;
+    font-weight: bold;
+}
+
 h2,
 h4 {
     text-align: center;
@@ -112,14 +119,17 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--sepia);
-    /*background-color: Blue;*/
+    background-color: Black;
     opacity: 0.9;
 }
 
+.banner-block a {
+    text-decoration: none;
+}
+
 .banner:hover {
-    border: 2px solid orange;
-    color: white;
+    color: Black;
+    background-color: Yellow;
     opacity: 1;
 }
 
@@ -130,15 +140,15 @@ h4 {
 
 #contact {
     display: block;
-    flex-direction: column;
     height: 225px;
     width: 1200px;
     margin-top: 20px;
-    background-color: var(--sepia);
+    background-color: Black;
     text-align: center;
+    opacity: 0.9;
 }
 
-#contact h6 {
-    margin-left: 10px;
-    text-align: left;
-}
+    #contact h6 {
+        margin-left: 10px;
+        text-align: left;
+    }
