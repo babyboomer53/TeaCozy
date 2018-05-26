@@ -27,33 +27,50 @@
     <section id="featured-tea">
         <h2>Tea of the Month</h2>
         <h4>What's Steeping at the Tea Cozy?</h4>
+        <!--
+        In my quest to find an  effective  way  to  align  a  caption  with  its
+        corresponding  image,  I  came across an article describing how to do so
+        using HTML tables. Other information suggested that  using  HTML  tables
+        for  this  purpose  might  not  be ideal.   So, when I found information
+        about the HTML "figure" and "figcaption" elements,  I  decided  to  give
+        them  a  try.  Unfortunately,  I  was not able to implement that.  So, I
+        reverted to the use of HTML tables.
+
+        Even after I managed to implement the HTML tables successfully, the code
+        validator  (https://validator.w3.org/)  flagged  some  of  the  code  as
+        "obsolete." Specifically, it didn't like the fact that I  had  used  the
+        "align"  attribute  of  the  caption element. Fortunately, it provided a
+        link to a page of CSS alternatives  where  I  found  a  property  called
+        "caption-side."     Refer     to     the     Cascading    Style    Sheet
+        (resources/css/style.css) for the specific implementation.
+        -->
         <div>
             <table class="tea">
-                <caption align="bottom">
+                <caption>
                     Fall Berry Blitz Tea
                 </caption>
                 <tr><td><img src="./resources/images/img-berryblitz.jpg" alt=""></td></tr>
             </table>
             <table class="tea">
-                <caption align="bottom">
+                <caption>
                     Spiced Rum Tea
                 </caption>
                 <tr><td><img src="./resources/images/img-spiced-rum.jpg" alt=""></td></tr>
             </table>
             <table class="tea">
-                <caption align="bottom">
+                <caption>
                     Seasonal Donuts
                 </caption>
                 <tr><td><img src="./resources/images/img-donut.jpg" alt=""></td></tr>
             </table>
             <table class="tea">
-                <caption align="bottom">
+                <caption>
                     Myrtle Ave Tea
                 </caption>
                 <tr><td><img src="./resources/images/img-myrtle-ave.jpg" alt=""></td></tr>
             </table>
             <table class="tea">
-                <caption align="bottom">
+                <caption>
                     Bedford Bizarre Tea
                 </caption>
                 <tr><td><img src="./resources/images/img-bedford-bizarre.jpg" alt=""></td></tr>
@@ -85,9 +102,9 @@
 
     <section id="contact">
         <h2>The Tea Cozy</h2>
-        <a href="mailto:babyboomer@um.att.com">contact@theteacozy.com</a>
+        <a href="mailto:press@codecademy.com">contact@theteacozy.com</a>
         <h5>917-555-8904</h5>
-        <h6>&copy; copyright The Tea Cozy 2017</h6>
+        <h6>&copy; copyright The Tea Cozy 2018</h6>
     </section>
 
     <a href="#mission">Back to the top</a>

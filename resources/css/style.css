@@ -36,8 +36,26 @@ header {
     border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: var(--sepia);
+    /*
+    In  addition  to  being connected to "hover" selectors, three of the div
+    elements on this page are hyperlinks. They are square  boxes  containing
+    text. Their links are to external content. When selected, they open that
+    content in a new tab. The function of the hover selector  is  to  invert
+    the object's colors when the mouse cursor is over it.
+
+    There  is a header element with a fixed position at the top of the page.
+    When those elements are stacked (i.e., the link element is  beneath  the
+    header),  the link element flickers erratically when the mouse cursor is
+    hovering over the junction of the two  elements.  Conversely,  when  the
+    mouse cursor hovers over any portion of the link element not obscured by
+    the header, it behaves normally.  It's  almost  as  if  the  browser  is
+    confused  about  which  element  has  focus, and responds by vacillating
+    between them. With that theory in mind, I used the Z-index  property  to
+    give  the  header element higher priority in the stack order. It appears
+    to have worked.
+    */
     z-index: 10;
 }
 
@@ -64,20 +82,33 @@ a {
     background-image: url("../../resources/images/img-mission-background.jpg");
 }
 
-    #mission div {
-        Width: 100%;
-        Height: 150PX;
-        Flex-grow: 0;
-        background-color: Black;
-        opacity: 0.8;
-    }
-
-#featured-tea div {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1000px;
+#mission div {
+    Width: 100%;
+    Height: 150PX;
+    Flex-grow: 0;
+    background-color: #704214;
+    opacity: 0.8;
 }
+
+#featured-tea {
+    /*
+    Replacing the black background with a lighter color presented a problem.
+    Due  to  the  reduction  in  contrast,  some of the text elements became
+    difficult to see. I experimented with a variety of font colors, but  the
+    results were less than satisfactory. Eventually I decided to see whether
+    I could enhance the text without changing the default color. That's what
+    led me to text shadows. They are effective at enhancing the text without
+    disrupting the color scheme.
+    */
+    text-shadow: 2px 2px #704214;
+}
+
+    #featured-tea div {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1000px;
+    }
 
 table.tea {
     margin: 10px;
@@ -86,11 +117,12 @@ table.tea {
 td img {
     width: 300px;
     height: auto;
+    /*box-shadow: 4px 4px 4px #000000;*/
+    /*border: 1px solid var(--sepia);*/
 }
 
-table caption {
-    /*color: var(--sepia);*/
-    color: Black;
+caption {
+    caption-side: bottom;
     font-weight: bold;
 }
 
@@ -104,8 +136,6 @@ h4 {
     flex-direction: column;
     height: 500px;
     Width: 1200PX;
-    align-content: center;
-    justify-content: center;
     align-items: center;
     background-image: url("../../resources/images/img-locations-background.jpg");
 }
@@ -129,7 +159,7 @@ h4 {
 
 .banner:hover {
     color: Black;
-    background-color: Yellow;
+    background-color: Seashell;
     opacity: 1;
 }
 
@@ -143,7 +173,7 @@ h4 {
     height: 225px;
     width: 1200px;
     margin-top: 20px;
-    background-color: Black;
+    background-color: #704214;
     text-align: center;
     opacity: 0.9;
 }
