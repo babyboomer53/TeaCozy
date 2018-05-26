@@ -26,7 +26,7 @@ considered  using  a  background  image  that  was  out  of  focus.  The
 possibilities are endless, and this could go on forever, but  eventually
 I would reach the point of diminishing returns.
 
-Working  on  this  project  has  given  me  the  opportunity become more
+Working  on  this  project  has  given me the opportunity to become more
 familiar with git and GitHub. Additionally, another  student  introduced
 me  to the code editor named "Brackets." Wow, that has been a real boon!
 I signed up on CodePen as well!
