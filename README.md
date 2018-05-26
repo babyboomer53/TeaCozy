@@ -1,5 +1,6 @@
 # TeaCozy
 Codecademy BWS unit 4 day 14-16
+
 When my computer crashed in the second week of the course, it took  five
 days  to get it running again. I've been playing catch-up ever since. In
 response  to  the  first  project  I  submitted,  I  was  encouraged  to
