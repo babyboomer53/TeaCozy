@@ -25,75 +25,48 @@
     </section>
 
     <section id="featured-tea">
-        <h2>Tea of the Month</h2>
+        <h2 style="margin-top: 69px">Tea of the Month</h2>
         <h4>What's Steeping at the Tea Cozy?</h4>
-        <!--
-        In my quest to find an  effective  way  to  align  a  caption  with  its
-        corresponding  image,  I  came across an article describing how to do so
-        using HTML tables. Other information suggested that  using  HTML  tables
-        for  this  purpose  might  not  be ideal.   So, when I found information
-        about the HTML "figure" and "figcaption" elements,  I  decided  to  give
-        them  a  try.  Unfortunately,  I  was not able to implement that.  So, I
-        reverted to the use of HTML tables.
-
-        Even after I managed to implement the HTML tables successfully, the code
-        validator  (https://validator.w3.org/)  flagged  some  of  the  code  as
-        "obsolete." Specifically, it didn't like the fact that I  had  used  the
-        "align"  attribute  of  the  caption element. Fortunately, it provided a
-        link to a page of CSS alternatives  where  I  found  a  property  called
-        "caption-side."     Refer     to     the     Cascading    Style    Sheet
-        (resources/css/style.css) for the specific implementation.
-        -->
-        <div>
-            <table class="tea">
-                <caption>
-                    Fall Berry Blitz Tea
-                </caption>
-                <tr><td><img src="./resources/images/img-berryblitz.jpg" alt=""></td></tr>
-            </table>
-            <table class="tea">
-                <caption>
-                    Spiced Rum Tea
-                </caption>
-                <tr><td><img src="./resources/images/img-spiced-rum.jpg" alt=""></td></tr>
-            </table>
-            <table class="tea">
-                <caption>
-                    Seasonal Donuts
-                </caption>
-                <tr><td><img src="./resources/images/img-donut.jpg" alt=""></td></tr>
-            </table>
-            <table class="tea">
-                <caption>
-                    Myrtle Ave Tea
-                </caption>
-                <tr><td><img src="./resources/images/img-myrtle-ave.jpg" alt=""></td></tr>
-            </table>
-            <table class="tea">
-                <caption>
-                    Bedford Bizarre Tea
-                </caption>
-                <tr><td><img src="./resources/images/img-bedford-bizarre.jpg" alt=""></td></tr>
-            </table>
+        <div class = "tea-container">
+            <div class = "tea-item">
+                <img src="./resources/images/img-berryblitz.jpg" alt="Fall Berry Blitz Tea">
+                <h3>Fall Berry Blitz Tea</h3>
+            </div>
+            <div class = "tea-item">
+                <img src="./resources/images/img-spiced-rum.jpg" alt="Spiced Rum Tea">
+                <h3>Spiced Rum Tea</h3>
+            </div>
+            <div class = "tea-item">
+                <img src="./resources/images/img-donut.jpg" alt="Seasonal Donuts">
+                <h3>Seasonal Donuts</h3>
+            </div>
+            <div class = "tea-item">
+                <img src="./resources/images/img-myrtle-ave.jpg" alt="Myrtle Ave Tea">
+                <h3>Myrtle Ave Tea</h3>
+            </div>
+            <div class = "tea-item">
+                <img src="./resources/images/img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+                <h3>Bedford Bizarre Tea</h3>
+            </div>
 
         </div>
     </section>
 
     <section id="locations">
         <h2>Locations</h2>
-        <div class="banner-block">
+        <div class="address-container">
             <a href="https://goo.gl/maps/XbbF8TLgFjB2" target="_blank">
-                <div class="banner">
+                <div class="address">
                     <p>Downtown<br> 384 W 4th St.<br>Suite 108<br> Portland, Maine</p>
                 </div>
             </a>
             <a href="https://goo.gl/maps/NjEvkZxMXHm" target="_blank">
-                <div class="banner">
+                <div class="address">
                     <p>East Bayside<br> 3433 Phisherman's Avenue<br>(Northwest Corner)<br> Portland, Maine</p>
                 </div>
             </a>
             <a href="https://goo.gl/maps/XchYomfwKTG2" target="_blank">
-                <div class="banner">
+                <div class="address">
                     <p>Oakdale<br> 515 Crescent Avenue<br>Second Floor<br> Portland, Maine</p>
                 </div>
             </a>
