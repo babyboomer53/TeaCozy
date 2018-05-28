@@ -31,6 +31,11 @@ familiar with git and GitHub. Additionally, another  student  introduced
 me  to the code editor named "Brackets." Wow, that has been a real boon!
 I signed up on CodePen as well!
 
-As invested as I am in the current project, one day  soon  I  will  look
-back  at  this  as  just the first step in a journey towards bigger and
-better things.
+When  coding  the  "featured tea" section in the initial release of this
+document, I failed to implement that solution using flex‐boxes. Instead,
+I  used  table elements. My research revealed that the use of tables for
+this purpose is not the best practice. My experience was that tables are
+relatively  unwieldy.  Intent on remediating that, I opened a new branch
+(flex‐remediation) for  this  repository.  The  flex‐remediation  branch
+contains  a  version  of  this  project  in  which  the tables have been
+replaced by flex‐boxes.
