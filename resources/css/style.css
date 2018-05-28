@@ -20,7 +20,7 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
-    background-image: url("../../resources/images/WhiteVignette.jpg");
+    background-image: url("../../resources/images/SmallerWhiteVignette.jpg");
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -142,6 +142,10 @@ h4 {
     background-image: url("../../resources/images/img-locations-background.jpg");
 }
 
+.address-container a {
+    text-decoration: none;
+}
+
 .address {
     display: inline-flex;
     width: 300px;
@@ -153,10 +157,6 @@ h4 {
     text-align: center;
     background-color: Black;
     opacity: 0.9;
-}
-
-.address-container a {
-    text-decoration: none;
 }
 
 .address:hover {
