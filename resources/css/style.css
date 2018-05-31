@@ -123,6 +123,7 @@ a {
 .tea-item img {
     width: 300px;
     height: auto;
+    box-shadow: 7px 7px 10px Black;
 }
 
 .tea-item h3 {
