@@ -90,6 +90,7 @@ a {
     opacity: 0.8;
 }
 
+#last-link,
 #featured-tea {
     /*
     Replacing the black background with a lighter color presented a problem.
@@ -155,12 +156,13 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: Black;
+    background-color: Blue;
+    box-shadow: 7px 7px 7px Black;
     opacity: 0.9;
 }
 
 .address:hover {
-    color: Black;
+    color: Blue;
     background-color: Seashell;
     opacity: 1;
 }
