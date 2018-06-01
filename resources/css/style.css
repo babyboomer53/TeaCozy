@@ -1,9 +1,9 @@
 :root {
-    --sepia: #704214;
+  --sepia: #704214;
 }
 
 body {
-    /*
+  /*
     Wow!  It  took me around 40 minutes to figure out why there was a "hole"
     at the top of my browser  between the top edge of the header and the top
     edge of the browser window. It wasn¿t until I scrolled the window that I
@@ -16,29 +16,29 @@ body {
     creating a gap between the top of the header and the edge of the window.
     To rectify that, I coded the following override:
     */
-    margin-top: 0; /* Override the default value for the the top margin of the body element. */
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    background-image: url("../../resources/images/SmallerWhiteVignette.jpg");
-    opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-attachment: fixed;
+  margin-top: 0; /* Override the default value for the the top margin of the body element. */
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-image: url("../../resources/images/SmallerWhiteVignette.jpg");
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: fixed;
 }
 
 header {
-    display: flex;
-    position: fixed;
-    height: 69px;
-    width: 100%;
-    border-bottom: 1px solid seashell;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0.9;
-    background-color: var(--sepia);
-    /*
+  display: flex;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  background-color: var(--sepia);
+  /*
     In  addition  to  being connected to "hover" selectors, three of the div
     elements on this page are hyperlinks. They are square  boxes  containing
     text. Their links are to external content. When selected, they open that
@@ -56,43 +56,43 @@ header {
     give  the  header element higher priority in the stack order. It appears
     to have worked.
     */
-    z-index: 10;
+  z-index: 10;
 }
 
-    header img {
-        height: 50px;
-        margin-left: 10px;
-    }
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
 
 a {
-    display: inline-flex;
-    font-size: 22px;
-    font-weight: normal;
-    color: seashell;
-    margin: 0 10px;
+  display: inline-flex;
+  font-size: 22px;
+  font-weight: normal;
+  color: seashell;
+  margin: 0 10px;
 }
 
 #mission {
-    display: flex;
-    margin-top: 70px;
-    Height: 700PX;
-    Width: 1200PX;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../resources/images/img-mission-background.jpg");
+  display: flex;
+  margin-top: 70px;
+  height: 700px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../resources/images/img-mission-background.jpg");
 }
 
 #mission div {
-    Width: 100%;
-    Height: 150PX;
-    Flex-grow: 0;
-    background-color: #704214;
-    opacity: 0.8;
+  width: 100%;
+  height: 150px;
+  flex-grow: 0;
+  background-color: #704214;
+  opacity: 0.8;
 }
 
 #last-link,
 #featured-tea {
-    /*
+  /*
     Replacing the black background with a lighter color presented a problem.
     Due  to  the  reduction  in  contrast,  some of the text elements became
     difficult to see. I experimented with a variety of font colors, but  the
@@ -101,89 +101,88 @@ a {
     led me to text shadows. They are effective at enhancing the text without
     disrupting the color scheme.
     */
-    text-shadow: 2px 2px #704214;
+  text-shadow: 2px 2px #704214;
 }
 
-
 .tea-container {
-    display: flex;
-    width: 1000px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .tea-item {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px;
 }
 
 .tea-item img {
-    width: 300px;
-    height: auto;
-    box-shadow: 7px 7px 10px Black;
+  width: 300px;
+  height: auto;
+  box-shadow: 7px 7px 10px Black;
 }
 
 .tea-item h3 {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 h2,
 h4 {
-    text-align: center;
+  text-align: center;
 }
 
 #locations {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    Width: 1200PX;
-    align-items: center;
-    background-image: url("../../resources/images/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 1200px;
+  align-items: center;
+  background-image: url("../../resources/images/img-locations-background.jpg");
 }
 
 .address-container a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .address {
-    display: inline-flex;
-    width: 300px;
-    height: 300px;
-    line-height: 2.5;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: Blue;
-    box-shadow: 7px 7px 7px Black;
-    opacity: 0.9;
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  line-height: 2.5;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: Blue;
+  box-shadow: 7px 7px 7px Black;
+  opacity: 0.9;
 }
 
 .address:hover {
-    color: Blue;
-    background-color: Seashell;
-    opacity: 1;
+  color: Blue;
+  background-color: Seashell;
+  opacity: 1;
 }
 
 .address p::first-line {
-    font-size: 1.17em; /* I believe this is the default size of HTML h3 elements. */
-    font-weight: bold;
+  font-size: 1.17em; /* I believe this is the default size of HTML h3 elements. */
+  font-weight: bold;
 }
 
 #contact {
-    display: block;
-    height: 225px;
-    width: 1200px;
-    margin-top: 20px;
-    background-color: #704214;
-    text-align: center;
-    opacity: 0.9;
+  display: block;
+  height: 225px;
+  width: 1200px;
+  margin-top: 20px;
+  background-color: #704214;
+  text-align: center;
+  opacity: 0.9;
 }
 
-    #contact h6 {
-        margin-left: 10px;
-        text-align: left;
-    }
+#contact h6 {
+  margin-left: 10px;
+  text-align: left;
+}
